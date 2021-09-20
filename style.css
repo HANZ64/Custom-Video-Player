@@ -24,6 +24,7 @@ body {
 
 .heading-text {
   font-style: italic;
+  text-align: center;
 }
 
 .fas {
@@ -72,7 +73,7 @@ video {
   transition: all 0.5s ease-out 1s;
 }
 
-.show-controls:hover .controls-container {
+.player:hover .controls-container {
   opacity: 1;
   transition: all 0.1s ease-out;
 }
@@ -228,6 +229,34 @@ select > option {
   transform: translateY(-50%);
 }
 
+footer a {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 0.3rem 0.5rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  footer a {
+    font-size: 0.8rem;
+    bottom: auto;
+    top: 0;
+  }
+}
+
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
   .player {
@@ -276,34 +305,6 @@ select > option {
 
   .time {
     font-size: 12px;
-  }
-}
-
-footer a {
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  padding: 0.3rem 0.5rem;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer a:visited {
-  color: black;
-}
-
-@media (max-width: 1024px) {
-  footer a {
-    font-size: 0.8rem;
-    bottom: auto;
-    top: 0;
   }
 }
 
