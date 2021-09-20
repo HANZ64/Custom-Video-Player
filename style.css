@@ -23,6 +23,7 @@ body {
 }
 
 .heading-text {
+  font-size: 2rem;
   font-style: italic;
   text-align: center;
 }
@@ -259,6 +260,10 @@ footer a:visited {
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
+  .heading-text {
+    font-size: 1.4rem;
+  }
+
   .player {
     min-width: 0;
     max-width: 95vw;
